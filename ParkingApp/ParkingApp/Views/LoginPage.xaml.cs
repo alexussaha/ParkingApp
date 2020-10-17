@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ParkingApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ParkingApp.Services;
 
 namespace ParkingApp.Views
 {
@@ -17,6 +18,13 @@ namespace ParkingApp.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
         
+
+        private void BtnCheck_Click(object sender)
+        {
+            
+        }
+
     }
 }
