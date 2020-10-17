@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ParkingApp.ViewModels;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace ParkingApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class ServiceChoosePage : ContentPage
     {
-        public LoginPage()
+        public ServiceChoosePage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
         }
-        
+
+        private async void OnNextClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(ItemsPage));
+        }
     }
 }

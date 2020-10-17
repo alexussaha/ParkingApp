@@ -11,5 +11,7 @@ namespace ParkingApp.Views
             InitializeComponent();
             BindingContext = new ItemDetailViewModel();
         }
+
+
     }
 }
