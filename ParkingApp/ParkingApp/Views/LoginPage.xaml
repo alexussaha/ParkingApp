@@ -7,13 +7,26 @@
              x:Class="ParkingApp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Entry Text="{Binding Username}"
+        <Grid>
+            <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                        <Image Source="logo1.png" VerticalOptions="Center" HeightRequest="64" />
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+                <Entry Text="{Binding Username}"
                        Placeholder="Username" />
-            <Entry Text="{Binding Password}"
+                <Entry Text="{Binding Password}"
                        Placeholder="Password"
                        IsPassword="True" />
-            <Button VerticalOptions="Center" Text="Войти" Command="{Binding LoginCommand}"/>
-        </StackLayout>
+                <Button VerticalOptions="Center" Text="Войти" Command="{Binding LoginCommand}"/>
+            </StackLayout>
+            <StackLayout Padding="10,0,10,0" VerticalOptions="End">
+                <Label Text="Для получения логина и пароля обратитесь в ТСЖ" FontSize="16" Padding="0,0,0,0"/>
+            </StackLayout>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>
