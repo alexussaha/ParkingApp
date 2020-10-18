@@ -31,7 +31,7 @@
                 <Button Margin="0,10,0,0" Text="Ввести адрес"
                         HeightRequest="80"
                         BackgroundColor="LightGray"
-                       
+                       Clicked="OnAddresstClicked"
                         TextColor="Gray" />
                 <Button Margin="0,10,0,0" Text="Выбрать на карте"
                         HeightRequest="80"

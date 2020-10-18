@@ -50,7 +50,7 @@ namespace ParkingApp.ViewModels
             {
                 //string logPass = JsonConvert.SerializeObject(user);
                 string logPass = "{\n\"username\": \""+ UserName + "\",\n\"password\": \"" + PassWord + "\"\n}";
-                string answer = PostQue.POST("https://82ff0d69cf18.ngrok.io" + "/api/v1/login/", logPass);//PUT YOUR API HERE
+                string answer = PostQue.POST("https://7bcc592c4736.ngrok.io" + "/api/v1/login/", logPass);//PUT YOUR API HERE
                 if (WorkWithJson.IsValidJson(answer))
                 {
                     ReceivedData.taken = JsonConvert.DeserializeObject<Token>(answer);

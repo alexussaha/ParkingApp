@@ -21,5 +21,10 @@ namespace ParkingApp.Views
         {
             await Shell.Current.GoToAsync(nameof(ItemsPage));
         }
+
+        private async void OnAddresstClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
     }
 }
